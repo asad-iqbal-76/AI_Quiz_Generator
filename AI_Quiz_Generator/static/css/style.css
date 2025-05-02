@@ -1,0 +1,124 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Animated Gradient Background */
+.animated-bg {
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #ff6b6b);
+    background-size: 400%;
+    animation: gradientShift 15s ease infinite;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Animations */
+.animate-fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+.animate-fade-in-delay {
+    animation: fadeIn 1s ease-in 0.3s both;
+}
+
+.animate-slide-up {
+    animation: slideUp 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Card Styles */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+.card-body {
+    color: #e5e7eb;
+}
+
+/* Alert */
+.alert {
+    background: rgba(239, 68, 68, 0.2);
+    color: #fecaca;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    border: 1px solid rgba(239, 68, 68, 0.5);
+}
+
+/* List Group */
+.list-group-item {
+    border-bottom: 1px solid rgba(75, 85, 99, 0.5);
+    padding: 0.5rem 0;
+    color: #e5e7eb;
+}
+
+.list-group-item strong {
+    color: #f472b6;
+    font-weight: 500;
+}
+
+/* Buttons */
+.btn-success {
+    background: linear-gradient(to right, #10b981, #14b8a6);
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.btn-success:hover {
+    background: linear-gradient(to right, #059669, #0d9488);
+    transform: scale(1.05);
+}
+
+.btn-danger {
+    background: linear-gradient(to right, #ef4444, #ec4899);
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.btn-danger:hover {
+    background: linear-gradient(to right, #dc2626, #db2777);
+    transform: scale(1.05);
+}
